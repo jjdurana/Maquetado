@@ -2,13 +2,9 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
+        <meta name="Author" content="JorgeDurana">
         <title> Etiquetas y sus usos en HTML</title>
-        <style>
-            table, th, td {
-                border: 1px solid black
-            }
-        </style>
-         <link rel="stylesheet" href="./CSS/styles.css">
+        <link rel="stylesheet" href="./CSS/styles.css">
 
     </head>
 
@@ -67,7 +63,7 @@
             <p><a href="#head">&lt;head&gt;</a></p>
             <p><a href="#header">&lt;header&gt;</a></p>
             <p><a href="#hgroup">&lt;hgroup&gt;</a></p>
-            <p><a href="#hr"></a>&lt;hr&gt;</p>
+            <p><a href="#hr">&lt;hr&gt;</a></p>
             <p><a href="#html">&lt;html&gt;</a></p>
             <p><a href="#i">&lt;i&gt;</a></p>
             <p><a href="#iframe">&lt;iframe&gt;</a></p>
@@ -89,11 +85,15 @@
             <p><a href="#noframes">&lt;noframes&gt;</a></p>
             <p><a href="#noscript">&lt;noscript&gt;</a></p>
             <p><a href="#object">&lt;object&gt;</a></p>
-            <p><a href="#ol">&lt;object&gt;</a></p>
+            <p><a href="#ol">&lt;ol&gt;</a></p>
             <p><a href="#optgroup">&lt;optgroup&gt;</a></p>
             <p><a href="#option">&lt;option&gt;</a></p>
             <p><a href="#output">&lt;output&gt;</a></p>
             <p><a href="#p">&lt;p&gt;</a></p>
+            <p><a href="#param">&lt;param&gt;</a></p>
+            <p><a href="#picture">&lt;picture&gt;</a></p>
+            <p><a href="#progress">&lt;progress&gt;</a></p>
+            <p><a href="#q">&lt;q&gt;</a></p>
             <p><a href="#rp">&lt;rp&gt;</a></p>
             <p><a href="#rt">&lt;rt&gt;</a></p>
             <p><a href="#ruby">&lt;ruby&gt;</a></p>
@@ -136,9 +136,16 @@
         <hr>
         <section class="definidos">
             <article id="!--…--">
+                <!--Este es el ejemplo de comentario-->
                 <hgroup>
                     <h2>&lt;!--…--&gt;</h2>
                     <p>Se utiliza para definir un comentario dentro de nuestro archivo .html y no será renderizado en el navegador</p><br>
+                    <div class="ejemplo">
+                        <p>Ejmplo:</p>
+                        <img src="assets/Images/comentario_HTML.jpg" alt="Coment" style="width: 50%">
+
+
+                    </div>
                 </hgroup>
                 
 
@@ -148,6 +155,12 @@
                 <hgroup>
                     <h2>&lt;!DOCTYPE&gt;</h2>
                     <p>Define el tipo de archivo a crear, en este caso &lt;!DOCTYPE&gt; HTML</p><br>
+                    <div class="ejemplo">
+                        <p>Ejmplo:</p>
+                        <img src="assets/Images/doctype_img.jpg" alt="Doctype" style="width: 50%">
+
+
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -160,7 +173,7 @@
                         Su atributo más importante es el href, el cual indica el destino del vínculo.<br>
 
                             <div>
-                                <table class="tabla a">
+                                <table class="ejemplo">
                                     <caption><h4>Atributos de la &LT;a&gt;</h4></caption>
                                     <tr>
                                     <th>Atributo</th>
@@ -248,11 +261,13 @@
                 <hgroup>
                     <h2>&lt;abbr&gt;</h2>
                 <p>Define una abreviación o un acrónimo</p>
+                <div class="ejemplo abbr">
 
-                    <p>Ejemplo:<p></p> 
+                    <p>Ejemplo:</p>
                     
-                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
-                    </p>
+                    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+                </div>
                 </hgroup>
             </article>
             <hr>
@@ -269,8 +284,10 @@
                 <hgroup>
                     <h2>&lt;address&gt;</h2>
                     <p>Define la información de contacto de el autor/dueño de un documento.</p>
+                    
+                    <div class="ejemplo address">
 
-                    <p>Ejemplo:</p> 
+                        <p>Ejemplo:</p> 
                         
                         <address>
                         Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
@@ -279,7 +296,7 @@
                         Box 564, Disneyland<br>
                         USA<br>
                         </address>
-
+                    </div>
                 </hgroup>
             </article>
             <hr>
@@ -314,6 +331,16 @@
                     <h2>&lt;aside&gt;</h2>
                     <p>Define algún contenido a lado del contenido donde es puesto.</p>
                     <p>Debe ser indirectamente relacionado al contenido circundante.</p>
+                    <div class="ejemplo aside">
+                        <p>Ejemplo:</p>
+                        <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+                            <aside>
+                                <h4>Epcot Center</h4>
+                                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                            </aside>
+
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -324,16 +351,18 @@
                     <p>Puede contener una o más <source> con diferentes fuentes de audio.  </p>
                     <p>El navegador eligirá la primera fuente que soporte.</p>
                     <p>Existen tres formatos de audio soportados en HTML: MP3, WAV, OGG.</p><br>
+                    <div class="ejemplo audio">
                     <p>Ejemplo:</p>
-                    <div class="audio">
+                        <div class="audio">
                         <h5>Power Ranger Alert</h5>
                         <p>Click en el botón play para escuchar el llamado de Zordon</p>
 
                         <audio controls>
-                            <source src="./assets/1power_ranger_wrist_communicator_mp3_ringtone.mp3" type="audio/mpeg">
+                            <source src="./assets/Audio/1power_ranger_wrist_communicator_mp3_ringtone.mp3" type="audio/mpeg">
                             Tu navegador no soporta el elemento de audio.
                         </audio>
-                    </div>          
+                        </div>  
+                    </div>        
                 </hgroup>
                 <hr>
             </article>
@@ -352,6 +381,9 @@
                         <p>Debe tener href o atributo de objetivo presente o ambos.</p>
                         
                         <p>Sólo puede haber un elemento base en un documento, y debe estar presente en el elemento &lt;head&gt;</p>
+                        <div class="ejemplo base">
+
+                        </div>
                 </hgroup>
                 <hr>
             </article>
@@ -378,10 +410,12 @@
                     <p>BDO son las siglas de Bi-Directional Override.</p>
 
                     <p>La etiqueta se utiliza para anular la dirección actual del texto.</p>
+                    <div class="ejemplo bdo"> 
                     <p>Ejemplo:</p>
 
                     <p>Este parrafo irá de izquierda a derecha.</p>
                     <p><bdo dir="rtl">Este párrafo irá de derecha a izquierda.</bdo></p>
+                    </div>
                 </hgroup>
             </article>
             <article id="big">
@@ -396,12 +430,13 @@
                 <hgroup>
                     <h2>&lt;blockquote&gt;</h2>
                     <p>Define que una sección es una cita de otra fuente.</p>
+                    <div class="ejemplo blockquote">
                     <p>Ejemplo:</p>
                     <p>Aquí una cita desde el sitio del WWF</p>
                     <blockquote cite="http://www.worldwildlife.org/who/index.html">
                         For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
                         </blockquote>
-                        
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -434,9 +469,10 @@
                     <p>Se utiliza para dibujar gráficos, sobre la marcha, a través de secuencias de comandos</p>
                     <p>La etiqueta &lt;canvas&gt; es transparente y es solo un contenedor para gráficos, debe usar un script para dibujar los gráficos.</p>
                     <p>Cualquier texto dentro del elemento &lt;canvas&gt; se mostrará en los navegadores con JavaScript deshabilitado y en los navegadores que no admitan &lt;canvas&gt;.</p>
+                    <div class="ejemplo canvas">
                     <p>Ejemplo:</p>
                     <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
-                    
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -447,6 +483,7 @@
                     <p>La etiqueta &lt;caption&gt; debe insertarse inmediatamente después de la etiqueta &lt;table&gt;.</p>
                     <p>Consejo: De forma predeterminada, el título de una tabla se alineará en el centro sobre una tabla.</p>
                     <p>Sin embargo, las propiedades CSS text-align y caption-side se pueden usar para alinear y colocar el título.</p>
+                    <div class="ejemplo caption">
                     <p>Ejemplo:</p>
                     <div>
                         <table>
@@ -460,6 +497,7 @@
                               <td>$100</td>
                             </tr>
                           </table>
+                    </div>
                           
                     </div>
                 </hgroup>
@@ -480,8 +518,10 @@
                     <p>La etiqueta &lt;cite&gt; define el título de una obra creativa (por ejemplo, un libro, un poema, una canción, una película, una pintura, una escultura, etc.).</p>
                     <p>Nota: El nombre de una persona no es el título de una obra.</p>
                     <p>El texto del elemento &lt;cite&gt; suele estar en cursiva.</p>
+                    <div class="ejemplo cite">
                     <p>Ejemplo:</p>
                     <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -491,11 +531,12 @@
                     <p>La etiqueta &lt;code&gt; se utiliza para definir un fragmento de código informático.</p>
                     <p>El contenido del interior se muestra en la fuente monoespaciada predeterminada del navegador.</p>
                     <p>Consejo: Esta etiqueta no está obsoleta. Sin embargo, es posible lograr un efecto más rico mediante el uso de CSS.</p>
+                    <div class="ejemplo code">
                     <p>Ejemplo:</p>
-                    <h4>El elemento code</h4>
-                    <p>The HTML <code>button</code> tag defines a clickable button.</p>
-                    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
-
+                        <h4>El elemento code</h4>
+                        <p>The HTML <code>button</code> tag defines a clickable button.</p>
+                        <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -505,7 +546,7 @@
                     <p>La etiqueta &lt;col&gt; especifica las propiedades de columna de cada columna dentro de un elemento &lt;colgroup&gt;.</p>
                     <p>La etiqueta &lt;col&gt; es útil para aplicar estilos a columnas enteras, en lugar de repetir los estilos para cada celda, para cada fila.</p>
                     <p>Ejemplo:</p>
-                    <div>
+                    <div class="ejemplo col">
                         <table>
                             <colgroup>
                               <col span="2" style="background-color:red">
@@ -542,12 +583,14 @@
                     <p>La etiqueta &lt;data&gt; se utiliza para agregar una traducción legible por máquina de un contenido determinado.</p>
                     <p>Este elemento proporciona un valor legible por máquina para los procesadores de datos y un valor legible por humanos para la representación en un explorador.</p>
                     <p>Consejo: Si el contenido está relacionado con la hora o la fecha, utilice el elemento &lt;time&gt; en su lugar.</p>
+                    <div class="ejemplo data">
                     <p>Ejemplo:</p>
                     <ul>
                         <li><data value="21053">Cherry Tomato</data></li>
                         <li><data value="21054">Beef Tomato</data></li>
                         <li><data value="21055">Snack Tomato</data></li>
-                      </ul>                    
+                      </ul> 
+                    </div>                     
                 </hgroup>
                 <hr>
             </article>
@@ -558,6 +601,7 @@
                     <p>La etiqueta &lt;datalist&gt; se utiliza para proporcionar una función de "autocompletar" para los elementos &lt;input&gt;.</p> 
                     <p>Los usuarios verán una lista desplegable de opciones predefinidas a medida que ingresan datos.</p>
                     <p>El atributo id del elemento &lt;datalist&gt; debe ser igual al atributo list del elemento &lt;input&gt; (esto los une).</p>
+                    <div class="ejemplo datalist">
                     <p>Ejemplo:</p>
                     <label for="browser">Choose your browser from the list:</label>
                     <input list="browsers" name="browser" id="browser">
@@ -569,6 +613,7 @@
                         <option value="Opera">
                         <option value="Safari">
                     </datalist>
+                    </div>
 
                 </hgroup>
                 <hr>
@@ -580,6 +625,7 @@
                     <p>La etiqueta &LT;dd&gt; se utiliza para describir un término/nombre en una lista de descripción.</p>
                     <p>La etiqueta &lt;dd&gt; se utiliza junto con &lt;dl&gt; (define una lista de descripción) y &lt;dt&gt; (define términos/nombres).</p>
                     <p>Dentro de una etiqueta &lt;dd&gt; puedes poner párrafos, saltos de línea, imágenes, enlaces, listas, etc.</p>
+                    <div class="ejemplo dd">
                     <p>Ejemplo:</p>
                     <p>These three elements are used to create a description list:</p>
                     <dl>
@@ -588,6 +634,7 @@
                         <dt>Milk</dt>
                         <dd>White cold drink</dd>
                     </dl>
+                    </div>
 
                 </hgroup>
                 <hr>
@@ -596,8 +643,10 @@
                 <hgroup>
                     <h2>&lt;dl&gt;</h2>
                     <p>La etiqueta &lt;del&gt; define el texto que se ha eliminado de un documento. Por lo general, los navegadores trazan una línea a través del texto eliminado.</p>
+                    <div class="ejemplo del">
                     <p>Ejemplo:</p>
                     <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+                    </div>
 
                 </hgroup>
                 <hr>
@@ -609,11 +658,13 @@
                     <p>La etiqueta &lt;details&gt; se utiliza a menudo para crear un widget interactivo que el usuario puede abrir y cerrar. De forma predeterminada, el widget está cerrado. Cuando se abre, se expande y muestra el contenido que contiene.</p>
                     <p>Cualquier tipo de contenido se puede poner dentro de la etiqueta &lt;details&gt;. </p>
                     <p>Consejo: La etiqueta &lt;summary&gt; se utiliza junto con &lt;details&gt; para especificar un encabezado visible para los detalles.</p>
+                    <div  class="ejemplo details">
                     <p>Ejemplo:</p>
                     <details>
                         <summary>Epcot Center</summary>
                         <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
                       </details>
+                    </div>
                       
                 </hgroup>
                 <hr>
@@ -644,6 +695,12 @@
                         <p>Learn <a href="#HTML">HTML</a> now.</p>
 
                     </details>
+                    <div class="ejemplo dfn">
+                        <p>Ejemplo:</p>
+                        <h4>The dfn element</h4>
+
+                            <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -652,6 +709,7 @@
                     <h2>&lt;dialog&gt;</h2>
                     <p>La etiqueta &lt;dialog&gt; define un cuadro de diálogo o una subventana.</p>
                     <p>El elemento &lt;dialog&gt; facilita la creación de cuadros de diálogo emergentes y modales en una página web.</p>
+                    <div class="ejemplo dialog">
                     <details>
                         <summary>Ejemplo:</summary>
                         <div>
@@ -659,6 +717,7 @@
                         </div>
 
                     </details>
+                    </div>
 
                 </hgroup>
                 <hr>
@@ -687,14 +746,15 @@
                     <h2>&lt;dl&gt;</h2>
                     <p>La etiqueta &lt;dl&gt; define una lista de descripciones.</p>
                     <p>La etiqueta &lt;dl&gt; se utiliza junto con &lt;dt&gt; (define términos/nombres) y &lt;dd&gt; (describe cada término/nombre).</p>
-                    <p>Ejemplo:</p>
-                    <dl>
-                        <dt>Coffee</dt>
-                        <dd>Black hot drink</dd>
-                        <dt>Milk</dt>
-                        <dd>White cold drink</dd>
-                      </dl>
-                      
+                    <div class="ejemplo dl">
+                        <p>Ejemplo:</p>
+                        <dl>
+                            <dt>Coffee</dt>
+                            <dd>Black hot drink</dd>
+                            <dt>Milk</dt>
+                            <dd>White cold drink</dd>
+                        </dl>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -703,14 +763,15 @@
                     <h2>&lt;dt&gt;</h2>
                     <p>La etiqueta &lt;dt&gt; define un término/nombre en una lista de descripciones.</p>
                     <p>La etiqueta &lt;dt&gt; se utiliza junto con &lt;dl&gt; (define una lista de descripciones) y &lt;dd&gt; (describe cada término/nombre).</p>
-                    <p>Ejemplo:</p>
-                    <dl>
-                        <dt>Coffee</dt>
-                        <dd>Black hot drink</dd>
-                        <dt>Milk</dt>
-                        <dd>White cold drink</dd>
-                      </dl>
-                      
+                    <div class="ejemplo dt">    
+                        <p>Ejemplo:</p>
+                            <dl>
+                                <dt>Coffee</dt>
+                                <dd>Black hot drink</dd>
+                                <dt>Milk</dt>
+                                <dd>White cold drink</dd>
+                            </dl>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -719,9 +780,11 @@
                     <h2>&lt;em&gt;</h2>
                     <p>La etiqueta &lt;em&gt; se utiliza para definir el texto enfatizado. El contenido del interior suele mostrarse en cursiva.</p>
                     <p>Un lector de pantalla pronunciará las palabras en &lt;em&gt; con énfasis, utilizando el acento verbal.</p>
+                    <div class="ejemplo em">
                     <p>Ejemplo:</p>
                     <p>You <em>have</em> to hurry up!</p>
                     <p>We <em>cannot</em> live like this.</p>
+                    </div>
 
                 </hgroup>
                 <hr>
@@ -730,10 +793,10 @@
                 <hgroup>
                     <h2>&lt;embed&gt;</h2>
                     <p>La etiqueta &lt;embed&gt; define un contenedor para un recurso externo, como una página web, una imagen, un reproductor multimedia o una aplicación de complemento.</p>
-                    <details>
+                    <div class="ejemplo embed">              
                         <summary>Ejemplo</summary>
-                        <embed type="image/jpg" src="assets/images.jpeg" width="300" height="200">
-                    </details>
+                        <embed type="image/jpg" src="assets/Images/michael_close.jpg" width="20%">
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -742,6 +805,7 @@
                     <h2>&lt;fieldset&gt;</h2>
                     <p>La etiqueta &lt;fieldset&gt; se utiliza para agrupar elementos relacionados en un formulario.</p>
                     <p>Dibuja un cuadro alrededor de los elementos relacionados.</p>
+                    <div class="ejemplo fieldset">
                     <p>Ejemplo:</p>
                     <form action="/action_page.php">
                         <fieldset>
@@ -757,6 +821,7 @@
                           <input type="submit" value="Submit">
                         </fieldset>
                       </form>
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -765,12 +830,13 @@
                     <h2>&lt;figcaption&GT;</h2>
                     <p>La etiqueta &lt;figcaption&gt; define un título para un elemento &lt;figure&gt;.</p>
                     <p>El elemento &lt;figcaption&gt; se puede colocar como el primer o el último elemento secundario del elemento &lt;figure&gt;.</p>
+                    <div class="ejemplo figcaption">
                     <p>Ejemplo:</p>
                     <figure>
-                        <img src="assets/images.jpeg" alt="Jiraiya" style="width:10%">
-                        <figcaption>Fig.1 - Jiraiya, Konoha, Japón.</figcaption>
+                        <img src="assets/Images/images.jpeg" alt="Jiraiya" style="width:10%">
+                        <figcaption>Fig.1 - Jiraiya. Konoha, Japón.</figcaption>
                       </figure>
-                      
+                    </div>
                 </hgroup>
                 <hr>
             </article>
@@ -780,8 +846,1205 @@
                     <p>La etiqueta &lt;figure&gt; especifica contenido autónomo, como ilustraciones, diagramas, fotos, listados de códigos, etc.</p>
                     <p>Si bien el contenido del elemento &lt;figure&gt; está relacionado con el flujo principal, su posición es independiente del flujo principal y, si se elimina, no debería afectar el flujo del documento.</p>
                     <p>Consejo: El elemento &lt;figcaption&gt; se utiliza para añadir un título para el elemento &lt;figure&gt;.</p>
+                    <div class="ejemplo figure">
+                        <p>Ejemplo:</p>
+                        <figure>
+                            <img src="assets/Images/dwight-putting-on-the-mask-the-office.webp" alt="Dwight" style="width: 30%;">
+                        </figure>
+                    </div>
                 </hgroup>
                 <hr>
+            </article>
+            <article id="font">
+                <hgroup>
+                <h2>&lt;font&gt;</h2>
+                <p class="nosoporte">No es compatible con HTML5.</p>
+                <p>La etiqueta &lt;font&gt; se utilizaba en HTML 4 para especificar el tipo de fuente, el tamaño de fuente y el color del texto.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="footer">
+                <hgroup>
+                    <h2>&lt;footer&gt;</h2>
+                    <p>La etiqueta &lt;footer&gt; define un pie de página para un documento o sección.</p>
+                    <p>Normalmente contiene:</p>
+                    <div>
+                        <ul>
+                            <li>Información de autoría</li>
+                            <li>Información sobre derechos de autor</li>
+                            <li>Información de contacto</li>
+                            <li>Mapa del sitio</li>
+                            <li>Volver al principio Enlaces</li>
+                            <li>Documentos conexos</li>
+                        </ul>
+                    </div>
+                    <p>Puede tener varios elementos &lt;footer&gt;en un documento.</p>
+
+                </hgroup>
+                <hr>
+            </article>
+            <article id="form">
+                <hgroup>
+                    <h2>&lt;form&gt;</h2>
+                    <p>La etiqueta &lt;form&gt; se utiliza para crear un formulario HTML para la entrada del usuario.</p>
+                    <p>El elemento &lt;form&gt; puede contener uno o varios de los siguientes elementos de formulario:</p>
+                    <div>
+                        <ul>
+                            <li>input</li>
+                            <li>textarea</li>
+                            <li>button</li>
+                            <li>select</li>
+                            <li>option</li>
+                            <li>optgroup</li>
+                            <li>fieldset</li>
+                            <li>label</li>
+                            <li>output</li>                           
+                        </ul>
+                    </div>
+                    <div class="ejemplo form">
+                        <p>Ejemplo:</p>
+                        <form action="/action_page.php" method="get">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <input type="submit" value="Submit">
+                          </form>                       
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="frame">
+                <hgroup>
+                    <p class="nosoporte">No es compatible con HTML5.</p>
+                    <p>La etiqueta &lt;frame&gt; se usaba en HTML 4 para definir una ventana (frame) en particular dentro de un &lt;frameset&gt;.</p>
+
+                </hgroup>
+                <hr>
+
+            </article>
+            <article id="frameset">
+                <hgroup>
+                    <p class="nosoporte">No es compatible con HTML5.</p>
+                    <p>La etiqueta &lt;frameset&gt; se utilizó en HTML 4 para definir un conjunto de marcos.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="h1">
+                <hgroup>
+                    <h2>&lt;h1&gt; a &lt;h6&gt;</h2>
+                    <p>Las etiquetas &lt;h1&gt; a &lt;h6&gt; se utilizan para definir encabezados HTML.</p>
+                    <p>&lt;h1&gt; define el encabezado más importante. &lt;h6&gt; define el encabezado menos importante.</p>
+                    <p>Nota: Utilice solo un &lt;h1&gt; por página, esto debe representar el encabezado / tema principal de toda la página. Además, no omita los niveles de encabezado: comience con &lt;h1&gt;, luego use &lt;h2&gt;, y así sucesivamente.</p>
+                    <span class="ejemplo h1">
+                        
+                        <h2>Encabezado 2</h2>
+                        <h3>Encabezado 3</h3>
+                        <h4>Encabezado 4</h4>
+                        <h5>Encabezado 5</h5>
+                        <h6>Encabezado 6</h6>
+
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="head">
+                <hgroup>
+                    <h2>&lt;head&gt;</h2>
+                    <p>El elemento &lt;head&gt; es un contenedor de metadatos (datos sobre datos) y se coloca entre la etiqueta &lt;html&gt; y la etiqueta &lt;body&gt;.</p>
+                    <p>Los metadatos son datos sobre el documento HTML. No se muestran los metadatos.</p>
+                    <p>Los metadatos suelen definir el título del documento, el conjunto de caracteres, los estilos, los guiones y otra metainformación.</p>
+                    <p>Los siguientes elementos pueden ir dentro del elemento &lt;head&gt;:</p>
+                    <span>
+                        <ul>
+                            <li>&lt;title&gt; (requerido en cada archivo HTML)</li>
+                            <li>style</li>
+                            <li>base</li>
+                            <li>link</li>
+                            <li>meta</li>
+                            <li>script</li>
+                            <li>noscript</li>
+                            
+                        </ul>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="header">
+                <hgroup>
+                    <h2>&lt;header&gt;</h2>
+                    <p>El elemento &lt;header&gt; representa un contenedor para contenido introductorio o un conjunto de vínculos de navegación.</p>
+                    <p>Un elemento &lt;header&gt; normalmente contiene:</p>
+                    <span>
+                        <ul>
+                            <li>uno o más elementos de encabezado (&lt;h1&gt; - &lt;h6&gt;)</li>
+                            <li>Logotipo o icono</li>
+                            <li>Información de autoría</li>
+                        </ul>
+                    </span>
+                    <p>Nota: Puede tener varios elementos &lt;header&gt; en un documento HTML. Sin embargo, &lt;header&gt; no se puede colocar dentro de un &lt;footer&gt;, &lt;address&gt; u otro elemento &lt;header&gt;.</p>
+                </hgroup>
+                      <hr>  
+            </article>
+            <article id="hgroup">
+                <hgroup>
+                    <h2>&lt;hgroup</h2>
+                    <p>Nota: Puede tener varios elementos &lt;encabezado&gt; en un documento HTML. Sin embargo, &lt;header&gt; no se puede colocar dentro de un &lt;footer&gt;, &lt;address&gt; u otro elemento &lt;header&gt;.</p>
+                    <p>El encabezado dentro del elemento &lt;hgroup&gt; puede ser cualquiera de los encabezados &lt;h1&gt; a &lt;h6&lt;.</p>
+                    <p>Nota: El elemento &lt;hgroup&gt; no se representa como nada especial en un navegador. Sin embargo, puede usar CSS para aplicar estilo al elemento &lt;hgroup&gt; y su contenido.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="hr">
+                <hgroup>
+                <h2>&lt;hr&gt;</h2>
+                <p>La etiqueta &lt;hr&gt; define una pausa temática en una página HTML (por ejemplo, un cambio de tema).</p>
+                <p>El elemento &lt;hr&gt; se muestra con mayor frecuencia como una regla horizontal que se utiliza para separar el contenido (o definir un cambio) en una página HTML.</p>
+                <span class="ejemplo hr">
+                    <p>Ejemplo:</p>
+                    <h3>Los principales idiomas de la Web</h3>
+                    <p>HTML es el lenguaje de marcado estándar para crear páginas web. HTML describe la estructura de una página web y consta de una serie de elementos. Los elementos HTML le dicen al navegador cómo mostrar el contenido.</p>
+                    <hr>
+                    <p>CSS es un lenguaje que describe cómo se deben mostrar los elementos HTML en la pantalla, el papel o en otros medios. CSS ahorra mucho trabajo, ya que puede controlar el diseño de varias páginas web a la vez.</p>
+                </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="html">
+                <hgroup>
+                    <h2>&lt;html</h2>
+                    <p>La etiqueta &lt;html&gt; representa la raíz de un documento HTML.</p>
+                    <p>La etiqueta &lt;html&gt; es el contenedor de todos los demás elementos HTML (excepto la etiqueta  &lt;! DOCTYPE&gt; ).</p>
+                    <p>Nota: Siempre debe incluir el atributo lang dentro de la etiqueta &lt;html&gt; para declarar el idioma de la página web. Esto está destinado a ayudar a los motores de búsqueda y navegadores.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="i">
+                <hgroup>
+                    <h2>&lt;i&gt;</h2>
+                    <p>La etiqueta &lt;i&gt; define una parte del texto en una voz o estado de ánimo alternativo. El contenido del interior suele mostrarse en cursiva.</p>
+                    <p>La etiqueta &lt;i&gt; se utiliza a menudo para indicar un término técnico, una frase de otro idioma, un pensamiento, el nombre de un barco, etc.</p>
+                    <p>Utilice el elemento &lt;i&gt; solo cuando no haya un elemento semántico más apropiado, como:</p>
+                    <span>
+                        <ul>
+                            <li>&lt;em&gt; (texto subrayado)</li>
+                            <li>&lt;strong&gt; (texto importante)</li>
+                            <li>&lt;mark&gt; (texto marcado/resaltado)</li>
+                            <li>&lt;cite&gt; (título de una obra)</li>
+                            <li>&lt;dfn&gt; (un término de definición)</li>
+                        </ul>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="iframe">
+                <hgroup>
+                    <h2>iframe</h2>
+                    <p>La etiqueta &lt;iframe&gt; especifica un marco en línea.</p>
+                    <p>Un marco en línea se utiliza para incrustar otro documento dentro del documento HTML actual.</p>
+                    <p>Consejo: Utiliza CSS para aplicar estilo al &lt;iframe&gt; </p>
+                    <span class="ejemplo iframe">
+                        <p>Ejemplo:</p>
+                        <iframe src="https://www.kodemia.com" title="Kodemia"></iframe>
+
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="img">
+                <hgroup>
+                    <h2>&lt;img&gt;</h2>
+                    <p>La etiqueta &lt;img&gt; se utiliza para incrustar una imagen en una página HTML.</p>
+                    <p>Las imágenes no se insertan técnicamente en una página web; Las imágenes están vinculadas a páginas web. La etiqueta &lt;img&gt; crea un espacio de retención para la imagen a la que se hace referencia.</p>
+                    <p>La etiqueta &lt;img&gt; tiene dos atributos obligatorios:</p>
+                    <p>src - Especifica la ruta a la imagen</p>
+                    <p>alt - Especifica un texto alternativo para la imagen, si la imagen por alguna razón no se puede mostrar</p>
+                    <p>Nota: Además, especifique siempre la anchura y la altura de una imagen. Si no se especifican la anchura y la altura, es posible que la página parpadee mientras se carga la imagen.</p>
+                    <p>Consejo: Para vincular una imagen a otro documento, basta con anidar la etiqueta &lt;img&gt; dentro de una etiqueta &lt;a&gt; &lt;/a&gt;</p>
+                    <div class="ejemplo img">
+                        <p>Ejemplo:</p>
+                        <img src="assets/Images/DwightWig.gif" alt="girl in wig" width="30%">
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="input">
+                <hgroup>
+                    <h2>&lt;input&gt;</h2>
+                    <p>La etiqueta &lt;input&gt; especifica un campo de entrada en el que el usuario puede introducir datos.</p>
+                    <p>El elemento &lt;input&gt; es el elemento de formulario más importante.</p>
+                    <p>El elemento &lt;input&gt; se puede mostrar de varias maneras, dependiendo del atributo type.</p>
+                    <p>Los diferentes tipos de entrada son los siguientes:</p>
+                    <span>
+                        <ul>
+                            <li>&lt;input type="button"&gt;</li>
+                                <li>&lt;input type="checkbox"&gt;</li>
+                                <li>&lt;input type="color"&gt;</li>
+                                <li>&lt;input type="date"&gt</li>
+                                <li>&lt;input type="datetime-local"&gt;</li>
+                                <li>&lt;input type="email"&gt;</li>
+                                <li>&lt;tipo de entrada="file"&gt;</li>
+                                <li>&lt;tipo de entrada="hidden"&gt;</li>
+                                <li>&lt;input type="image"&gt;</li>
+                                <li>&lt;input type="month"&gt;</li>
+                                <li>&lt;input type="number"&gt;</li>
+                                <li>&lt;input type="password"&gt;</li>
+                                <li>&lt;input type="radio"&gt;</li>
+                                <li>&lt;tipo de entrada="range"&gt;</li>
+                                <li>&lt;tipo de entrada="reset"&gt;</li>
+                                <li>&lt;input type="search"&gt;</li>
+                                <li>&lt;input type="submit"&gt;</li>
+                                <li>&lt;input type="tel"&gt;</li>
+                                <li>&lt;input type="text"&gt; (valor predeterminado)</li>
+                                <li>&lt;input type="time"&gt;</li>
+                                <li>&lt;tipo de entrada="url"&gt;</li>
+                                <li>&lt;input type="week"&gt;</li>
+                                
+                        </ul>
+                    </span>
+                    <div class="ejemplo input">
+                        <p>Ejemplo:</p>
+                        <h4>El elemento iput</h4>
+                        <form action="/action_page.php">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <input type="submit" value="Submit">
+                          </form>
+                          
+                          <p>Click the "Submit" button and the form-data will be sent to a page on the 
+                          server called "action_page.php".</p>
+                          
+                    </div>
+
+                </hgroup>
+                <hr>
+            </article>
+            <article id="ins">
+                <hgroup>
+                    <h2>&lt;ins&gt;</h2>
+                    <p>La etiqueta &lt;ins&gt; define un texto que se ha insertado en un documento. Por lo general, los navegadores subrayan el texto insertado.</p>
+                    <p>Consejo: Fíjate también en la etiqueta &lt;del&gt; para marcar el texto eliminado.</p>
+                    <span class="ejemplo ins">
+                        <p>Ejemplo:</p>
+                        <h3>El elemento ins</h3>
+
+                        <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="kbd">
+                <hgroup>
+                    <h2>&lt;kbd&gt;</h2>
+                    <p>La etiqueta &lt;kbd&gt; se utiliza para definir la entrada del teclado. El contenido del interior se muestra en la fuente monoespaciada predeterminada del navegador.</p>
+                    <p>Consejo: Esta etiqueta no está obsoleta. Sin embargo, es posible lograr un efecto más rico mediante el uso de CSS</p>
+                    <div class="ejemplo kbd">
+                        <p>Ejemplo:</p>
+                        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+                        <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="label">
+                <hgroup>
+                    <h2>&lt;&lt;label&gt;</h2>
+                    <p>La etiqueta &lt;label&gt; define una etiqueta para varios elementos:</p>
+                    <span>
+                        <ul>
+                            <li> input type="checkbox"</li>
+                            <li>input type="color"</li>
+                            <li>input type="date"</li>
+                            <li>input type="datetime-local"</li>
+                            <li>input type="email"</li>
+                            <li>input type="file"</li>
+                            <li>input type="month"</li>
+                            <li>input type="number"</li>
+                            <li>input type="password"</li>
+                            <li>input type="radio"</li>
+                            <li>input type="range"</li>
+                            <li>input type="search"</li>
+                            <li>input type="tel"</li>
+                            <li>input type="text"</li>
+                            <li>input type="time"</li>
+                            <li>input type="url"</li>
+                            <li>input type="week"</li>
+                            <li>meter</li>
+                            <li>progress</li>
+                            <li>select</li>
+                            <li>textarea</li>                              
+                        </ul>
+                     </span>   
+                    <p>El uso adecuado de las etiquetas con los elementos anteriores beneficiará:</p>
+                    <p>Usuarios de lectores de pantalla (leerán en voz alta la etiqueta, cuando el usuario esté enfocado en el elemento)</p>
+                    <p>Usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como casillas de verificación), porque cuando un usuario hace clic en el texto dentro del elemento <label>, cambia la entrada (esto aumenta el área de visita)</p>
+                    <div class="ejemplo label">
+                        <p>Ejemplo:</p>
+
+                        <p>Click on one of the text labels to toggle the related radio button:</p>
+
+                            <form action="/action_page.php">
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <label for="html">HTML</label><br>
+                              <input type="radio" id="css" name="fav_language" value="CSS">
+                              <label for="css">CSS</label><br>
+                              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                              <label for="javascript">JavaScript</label><br><br>
+                            <input type="submit" value="Submit">
+                            </form>
+                    </div>
+                    
+                </hgroup>
+                <hr>
+            </article>
+            <article id="legend">
+                <hgroup>
+                    <h2>&lt;legend&gt;</h2>
+                    <p>The &lt;legend&gt; tag defines a caption for the &lt;fieldset&gt; element.</p>
+                    <div class="ejemplo legend">
+                        <p>Ejemplo:</p>
+                        <form action="/action_page.php">
+                            <fieldset>
+                             <legend>Personalia:</legend>
+                             <label for="fname">First name:</label>
+                             <input type="text" id="fname" name="fname"><br><br>
+                             <label for="lname">Last name:</label>
+                             <input type="text" id="lname" name="lname"><br><br>
+                             <label for="email">Email:</label>
+                             <input type="email" id="email" name="email"><br><br>
+                             <label for="birthday">Birthday:</label>
+                             <input type="date" id="birthday" name="birthday"><br><br>
+                             <input type="submit" value="Submit">
+                            </fieldset>
+                           </form>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="&lt;li&gt;">
+                <hgroup>
+                    <h2>&lt;li&gt;</h2>
+                    <p>La etiqueta &lt;li&gt; define un elemento de lista.</p>
+
+                    <p>La etiqueta &lt;li&gt; se utiliza dentro de listas ordenadas (&lt;ol&gt;), listas desordenadas (&lt;ul&gt;) y en listas de menú (&lt;menu&gt;).</p>
+                    <p>En &lt;ul&gt; y &lt;menu&gt;, los elementos de la lista generalmente se mostrarán con viñetas.</p>
+                    <p>En &lt;ol&gt;, los elementos de la lista generalmente se mostrarán con números o letras.</p>                        
+                    <p>Consejo: Utiliza CSS para aplicar estilo a las listas.</p>
+                    <span class="ejemplo li">
+                        <p>Ejemplo:</p>
+
+                            <p>The ol element defines an ordered list:</p>
+                            <ol>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            </ol>
+
+                            <p>The ul element defines an unordered list:</p>
+                            <ul>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            </ul>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="link">
+                <hgroup>
+                    <h2>&lt;link&gt;</h2>
+                    <p>La etiqueta &lt;link&gt; define la relación entre el documento actual y un recurso externo.</p>
+                    <p>La etiqueta &lt;link&gt; se usa con mayor frecuencia para vincular a hojas de estilo externas o para agregar un favicon a su sitio web.</p>
+                    <p>El elemento &lt;link&gt; es un elemento vacío, solo contiene atributos. </p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="main">
+                <hgroup>
+                    <h2>&lt;main&gt;</h2>
+                    <p>La etiqueta &lt;main&gt; especifica el contenido principal de un documento.</p>
+                    <p>El contenido dentro del elemento &lt;principal&gt; debe ser único para el documento. No debe contener ningún contenido que se repita en los documentos, como barras laterales, enlaces de navegación, información de derechos de autor, logotipos de sitios y formularios de búsqueda.</p>
+                    <p>Nota: No debe haber más de un elemento &lt;main&gt; en un documento. El elemento &lt;main&gt; NO debe ser descendiente de un elemento &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt; o &lt;nav&gt;.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="map">
+                <hgroup>
+                    <h2>&lt;map&gt;</h2>
+                    <p>La etiqueta &lt;map&gt; se utiliza para definir un mapa de imagen. Un mapa de imagen es una imagen con áreas en las que se puede hacer clic.</p>
+                    <p>El atributo name del elemento &lt;map&gt; se asocia con el atributo de &lt;img&gt; y crea una relación entre la imagen y el mapa.</p>
+                    <p>El elemento &lt;map&gt; contiene una serie de elementos &lt;area&gt; que definen las áreas en las que se puede hacer clic en el mapa de imagen.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="mark">
+                <hgroup>
+                    <h2>&lt;mark&gt;</h2>
+                    <p>La etiqueta &lt;mark&gt; define el texto que debe marcarse o resaltarse.</p>
+                    <span class="ejemplo mark">
+                        <p>Ejemplo:</p>
+                        <p>Do not forget to buy <mark>milk</mark> today.</p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="menu">
+                <hgroup>
+                    <h2>&lt;menu&gt;</h2>
+                    <p>La etiqueta &lt;menu&gt; define una lista desordenada de contenido.</p>
+                    <p>Utilice la etiqueta &lt;menu&gt; junto con la etiqueta &lt;li&gt; para crear elementos de menú.</p>
+                    <p>Nota: &lt;menu&gt; es una alternativa a la etiqueta <ul> y los navegadores tratarán estas dos listas por igual.</p>
+                        <span class="ejemplo menu">
+                            <p>Ejemplo:</p>
+                            <menu>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                              </menu>
+                        </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="meta">
+                <hgroup>
+                    <h2>&lt;meta&gt;</h2>
+                    <p>La etiqueta &lt;meta&gt; define los metadatos de un documento HTML. Los metadatos son datos (información) sobre los datos.</p>
+                    <p>Siempre van dentro del elemento &lt;head&gt; y normalmente se utilizan para especificar el conjunto de caracteres, la descripción de la página, las palabras clave, el autor del documento y la configuración de la ventana gráfica.</p>
+                    <p>Los metadatos no se mostrarán en la página, pero se pueden analizar automáticamente.</p>
+                    <p>Los metadatos son utilizados por los navegadores (cómo mostrar contenido o volver a cargar la página), los motores de búsqueda (palabras clave) y otros servicios web.</p>
+                    <p>Existe un método para permitir que los diseñadores web tomen el control de la ventana gráfica (el área visible del usuario de una página web), a través de la etiqueta &lt;meta&gt;.</p>
+                    <div class="ejemplo meta">
+                        <p>Ejemplo:</p>
+                        <img src="assets/Images/meta.jpg" alt="meta" width="30%">
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="meter">
+                <hgroup>
+                    <h2>&lt;meter&gt;</h2>
+                    <p>La etiqueta &lt;meter&gt; define una medida escalar dentro de un rango conocido o un valor fraccionario. Esto también se conoce como medidor.</p>
+                    <p>Ejemplos: el uso del disco duro, la relevancia del resultado de una consulta, etc.</p>
+                    <p>Nota: La etiqueta <meter> no debe utilizarse para indicar el progreso (como en una barra de progreso). En el caso de las barras de progreso, utilice la etiqueta &lt;progress&gt;.</p>
+                    <p>Consejo: Añade siempre la etiqueta <label> para conocer las mejores prácticas de accesibilidad.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="nav">
+                <hgroup>
+                    <h2>&lt;nav&gt;</h2>
+                    <p>La etiqueta &lt;nav&gt; define un conjunto de vínculos de navegación.</p>
+
+                    <p>Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un elemento &lt;nav&gt;. El elemento &lt;nav&gt; está pensado solo para bloques principales de enlaces de navegación.</p>
+                        
+                    <p>Los navegadores, como los lectores de pantalla para usuarios deshabilitados, pueden usar este elemento para determinar si se omite la representación inicial de este contenido.</p>
+                
+                </hgroup>
+                <hr>
+            </article>
+            <article id="noframes">
+                <hgroup>
+                    <h2>&lt;noframes&gt;</h2>
+                    <p class="nosoporte">No es compatible con HTML5.</p>
+
+                    <p>La etiqueta &lt;noframes&gt; se utilizó en HTML 4 para actuar como una etiqueta de reserva para los navegadores que no admitían marcos.</p>
+                    
+                </hgroup>
+                <hr>
+            </article>
+            <article id="noscript">
+                <hgroup>
+                    <h2>&lt;noscript&gt;</h2>
+                    <p>La etiqueta &lt;noscript&gt; define un contenido alternativo que se mostrará a los usuarios que han deshabilitado las secuencias de comandos en su navegador o que tienen un navegador que no admite secuencias de comandos.</p>
+
+                    <p>El elemento &lt;noscript&gt; se puede utilizar tanto en &lt;head&gt; como en &lt;body&gt;. Cuando se usa dentro de &lt;head&gt;, el elemento &lt;noscript&gt; solo puede contener elementos &lt;link&gt;, &lt;style&gt; y &lt;meta&gt;.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="object">
+                <hgroup>
+                    <h2>&lt;object&gt;</h2>
+                    <p>La etiqueta &lt;object&gt; define un contenedor para un recurso externo.</p>
+
+                        <p>El recurso externo puede ser una página web, una imagen, un reproductor multimedia o una aplicación de complemento.</p>
+                        
+                        <p>Para incrustar una imagen, es mejor usar la etiqueta &lt;img&gt;.</p>
+                        
+                        <p>Para incrustar HTML, es mejor usar la etiqueta &lt;iframe&gt;.</p>
+                        
+                        <p>Para incrustar vídeo o audio, es mejor utilizar las etiquetas &lt;video&gt; y &lt;audio&gt;.</p>
+                        <div class="ejemplo object">
+                            <p>Ejemplo:</p>
+                            <object data="assets/Images/stan.gif" width="30%"></object>
+                        </div>                 
+                </hgroup>
+                <hr>
+            </article>
+            <article id="ol">
+                <hgroup>
+                    <h2>&lt;ol&gt;</h2>
+                    <p>La etiqueta &lt;ol&gt; define una lista ordenada. Una lista ordenada puede ser numérica o alfabética.</p>
+
+                    <p>La etiqueta &lt;li&gt; se utiliza para definir cada elemento de la lista.</p>
+                        
+                    <p>Consejo: Utiliza CSS para aplicar estilo a las listas.</p>
+                        
+                    <p>Consejo: Para una lista desordenada, utilice la etiqueta &lt;ul&gt;.</p> 
+                    <span class="ejemplo ol">
+                        <p>Ejemplo:</p>
+                        <p>The ol element defines an ordered list:</p>
+                            <ol>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                            </ol>
+                    </span>                    
+                </hgroup>
+                <hr>
+            </article>
+            <article id="optgroup">
+                <hgroup>
+                    <h2>&lt;optgroup&gt;</h2>
+                    <p>La etiqueta &lt;optgroup&gt; se utiliza para agrupar opciones relacionadas en un elemento &lt;select&gt; (lista desplegable).</p>
+
+                    <p>Si tiene una larga lista de opciones, los grupos de opciones relacionadas son más fáciles de manejar para un usuario.</p>
+                        
+                </hgroup>
+                <hr>
+            </article>
+            <article id="option">
+                <hgroup>
+                    <h2>&lt;optgroup&gt;</h2>
+                    <p>La etiqueta &lt;option&gt; define una opción en una lista de selección.</p>
+                    <p>&lt;option&gt; van dentro de un elemento &lt;select&gt;, &lt;optgroup&gt;; o &lt;datalist&gt;.</p>                      
+                    <p>Nota: La etiqueta &lt;option&gt; se puede usar sin ningún atributo, pero generalmente necesita el atributo value, que indica lo que se envía al servidor al enviar el formulario.</p>                       
+                    <p>Consejo: Si tiene una larga lista de opciones, puede agrupar las opciones relacionadas dentro de la etiqueta &lt;optgroup&gt;.</p>                       
+                </hgroup>
+                <hr>
+            </article>
+            <article id="output">
+                <hgroup>
+                    <h2>&lt;output&gt;</h2>
+                    <p>La etiqueta &lt;output&gt; se utiliza para representar el resultado de un cálculo (como el realizado por un script).</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="p">
+                <hgroup>
+                    <h2>&lt;p&gt;</h2>
+                    <p>La etiqueta &lt;p&gt; define un párrafo.</p>
+
+                    <p>Los navegadores añaden automáticamente una sola línea en blanco antes y después de cada elemento &lt;p&gt;.</p>
+                        
+                    <p>Consejo: Utiliza CSS para aplicar estilo a los párrafos.</p>
+                    <div class="ejemplo p">
+                        <p>Ejemplo:</p>
+                        <img src="assets/Images/p.jpg" alt="p" width="30%">
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="param">
+                <hgroup>
+                    <h2>&lt;param&gt;</h2>
+                    <p>La etiqueta &lt;param&gt; se utiliza para definir parámetros para un elemento &lt;object&gt;.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="picture">
+                <hgroup>
+                    <h2>&lt;picture&gt;</h2>
+                    <p>La etiqueta &lt;picture&gt; ofrece a los desarrolladores web más flexibilidad a la hora de especificar los recursos de imagen.</p>
+
+                    <p>El uso más común del elemento &lt;imagen&gt; será para la dirección de arte en diseños responsivos. En lugar de tener una imagen que se escala hacia arriba o hacia abajo en función del ancho de la ventanilla, se pueden diseñar varias imágenes para llenar mejor la ventanilla del navegador.</p>
+                        
+                    <p>El elemento &lt;picture&gt; contiene dos etiquetas: una o varias etiquetas &lt;source&gt; y una etiqueta &lt;img&gt;.</p>
+                        
+                    <p>El navegador buscará el primer elemento &lt;source&gt; en el que la consulta de medios coincida con el ancho de la ventana gráfica actual y, a continuación, mostrará la imagen adecuada (especificada en el atributo srcset). El elemento &lt;img&gt; es necesario como último elemento secundario del elemento &lt;picture&gt;, como opción de reserva si ninguna de las etiquetas de origen coincide.</p>
+                        
+                    <p>Consejo: El elemento &lt;imagen&gt; funciona de forma "similar" a &lt;vídeo&gt; y &lt;audio&gt;. Configura diferentes fuentes, y la primera fuente que se ajusta a las preferencias es la que se está utilizando.</p>
+                     <div class="ejemplo picture">
+                        <p>Ejemplo:</p>
+                        <picture>
+                            <source media="(min-width:800px)" srcset="assets/Images/michael_full.jpg">
+                            <source media="(min-width:600px)" srcset="assets/Images/glasses_michael.jpg">
+                            <img src="assets/Images/michael_icon.jpg" alt="michael" style="width: auto">
+                        </picture>
+                     </div>   
+                </hgroup>
+                <hr>
+            </article>
+            <article id="pre">
+                <hgroup>
+                    <h2>&lt;pre&gt;</h2>
+                    <p>La etiqueta &lt;pre&gt; define el texto preformateado.</p>                       
+                    <p>El texto de un elemento &lt;pre&gt; se muestra en una fuente de ancho fijo y el texto conserva tanto los espacios como los saltos de línea. El texto se mostrará exactamente como está escrito en el código fuente HTML.</p>
+        
+                </hgroup>
+                <hr>
+            </article>
+            <article id="progress">
+                <hgroup>
+                    <h2>&lt;progress&gt;</h2>
+                    <p>La etiqueta &lt;progress&gt; representa el progreso de finalización de una tarea.
+
+                    <p>Consejo: Añade siempre la etiqueta &lt;label&gt; para conocer las mejores prácticas de accesibilidad.</p>
+                    <p>Sugerencia: Utilice la etiqueta &lt;progress&gt; junto con JavaScript para mostrar el progreso de una tarea.</p>
+                    <p>Nota: La etiqueta &lt;progress&gt; no es adecuada para representar un medidor (por ejemplo, el uso del espacio en disco o la relevancia del resultado de una consulta). Para representar un medidor, utilice la etiqueta &lt;meter&gt; en su lugar.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="q">
+                <hgroup>
+                    <h2>&lt;q&gt;</h2>
+                    <p>La etiqueta &lt;q&gt; define una cita corta.</p>
+                    <p>Los navegadores normalmente insertan comillas alrededor de la cita.</p>                        
+                    <p>Consejo: Utiliza &lt;blockquote&gt; para citas largas.</p>
+                    <span class="ejemplo q">
+                        <p>Ejemplo:</p>
+                        <p>WWF's goal is to: 
+                            <q>Build a future where people live in harmony with nature.</q>
+                            We hope they succeed.</p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="rp">
+                <hgroup>
+                    <h2>&lt;rp&gt;</h2>
+                    <p>La etiqueta &lt;rp&gt; se puede usar para proporcionar paréntesis alrededor de un texto ruby, para que lo muestren los navegadores que no admiten anotaciones ruby.</p>
+                    <p>Use &lt;rp&gt; junto con &lt;ruby&gt; y &lt;rt&gt;: El elemento &lt;ruby&gt; consta de uno o más caracteres que necesitan una explicación/pronunciación, y un elemento &lt;rt&gt; que proporciona esa información, y un elemento opcional &lt;rp&gt; que define qué mostrar a los navegadores que no admiten anotaciones de ruby.</p>
+                    <div class="ejemplo rp">
+                        <p>Ejemplo:</p>
+                        <ruby>
+                            漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+                            </ruby>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="rt">
+                <hgroup>
+                    <h2>&lt;rt&gt;</h2>
+                    <p>La etiqueta &lt;rt&gt; define una explicación o pronunciación de caracteres (para tipografía de Asia Oriental) en una anotación de rubí.</p>
+                    <p>Use &lt;rt&gt; junto con &lt;ruby&gt; y &lt;rp&gt;: El elemento &lt;ruby&gt; consta de uno o más caracteres que necesitan una explicación/pronunciación, y un elemento &lt;rt&gt; que proporciona esa información, y un elemento opcional &lt;rp&gt; que define qué mostrar a los navegadores que no admiten anotaciones ruby.</p>
+                    <div class="ejemplo rt">
+                        <p>Ejemplo:</p>
+                        <ruby>
+                            漢 <rt> ㄏㄢˋ </rt>
+                            </ruby>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="ruby">
+                <hgroup>
+                    <h2>&lt;ruby&gt;</h2>
+                    <p>La etiqueta &lt;ruby&gt; especifica una anotación ruby.</p>
+
+                    <p>Una anotación de rubí es un pequeño texto adicional, adjunto al texto principal para indicar la pronunciación o el significado de los caracteres correspondientes. Este tipo de anotación se utiliza a menudo en las publicaciones japonesas.</p>
+                        
+                    <p>Use &lt;ruby&gt; junto con &lt;rt&gt; y &lt;rp&gt;: El elemento &lt;ruby&gt; consta de uno o más caracteres que necesitan una explicación/pronunciación, y un elemento <rt> que proporciona esa información, y un elemento opcional &lt;rp&gt; que define qué mostrar para los navegadores que no admiten anotaciones de ruby.</rt>
+                        <div class="ejemplo ruby">
+                            <p>Ejemplo:</p>
+                            <ruby>
+                                漢 <rt> ㄏㄢˋ </rt>
+                                </ruby>
+                        </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="s">
+                <hgroup>
+                    <h2>&lt;s&gt;</h2>
+                    <p>La etiqueta &lt;s&gt; especifica el texto que ya no es correcto, preciso o relevante. El texto se mostrará con una línea que lo atraviese.</p>
+                    <p>La etiqueta &lt;s&gt; no debe usarse para definir texto eliminado en un documento, use la etiqueta &lt;del&gt; para eso.</p>
+                    <span class="ejemplo s">
+                        <p>Ejemplo:</p>
+                        <p><s>Only 50 tickets left!</s></p>
+                        <p>SOLD OUT!</p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="samp">
+                <hgroup>
+                    <h2>samp</h2>
+                    <p>La etiqueta &lt;samp&gt; se utiliza para definir la salida de muestra de un programa informático. El contenido del interior se muestra en la fuente monoespaciada predeterminada del navegador.</p>
+                    <p>Consejo: Esta etiqueta no está obsoleta. Sin embargo, es posible lograr un efecto más rico mediante el uso de CSS.</p>
+                    <span class="ejemplo samp">
+                        <p>Ejemplo:</p>
+                        <p>Message from my computer:</p>
+                        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="script">
+                <hgroup>
+                    <h2>&lt;script&gt;</h2>
+                    <p>La etiqueta &lt;script&gt; se utiliza para incrustar un script del lado del cliente (JavaScript).</p>
+                    <p>El elemento &lt;script&gt; contiene instrucciones de secuencias de comandos o apunta a un archivo de secuencia de comandos externo a través del atributo src.</p>                       
+                    <p>Los usos comunes de JavaScript son la manipulación de imágenes, la validación de formularios y los cambios dinámicos de contenido.</p> 
+                </hgroup>
+                <hr>
+            </article>
+            <article id="search">
+                <hgroup>
+                    <h2>&lt;search&gt;</h2>
+                    <p>La etiqueta &lt;search&gt; se utiliza para especificar que aquí viene un conjunto de elementos que están relacionados con la búsqueda.</p>
+                    <p>Los elementos dentro de un elemento de &lt;search&gt; normalmente pueden ser elementos de formulario que se usan para realizar una búsqueda.</p>                        
+                    <p> Nota: El elemento &lt;search&gt; no se representa como nada especial en un navegador. Sin embargo, puede usar CSS para aplicar estilo al elemento &lt;search&gt; y su contenido.</p>
+                    <span class="ejemplo search">
+                        <p>Ejemplo:</p>
+                        <search>
+                            <form>
+                              <input name="fsrch" id="fsrch" placeholder="Search Maquetado">
+                            </form>
+                          </search>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="section">
+                <hgroup>
+                    <h2>&lt;section&gt;</h2>
+                    <p>La etiqueta &lt;section&gt; define una sección de un documento.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="select">
+                <hgroup>
+                    <h2>&lt;select&gt;</h2>
+                    <p>El elemento &lt;select&gt; se utiliza para crear una lista desplegable.</p>
+                    <p>El elemento &lt;select&gt; se usa con mayor frecuencia en un formulario para recopilar la entrada del usuario.</p>
+                    <p>El atributo name es necesario para hacer referencia a los datos del formulario después de enviarlo (si omite el atributo name, no se enviará ningún dato de la lista desplegable).</p>
+                    <p>El atributo id es necesario para asociar la lista desplegable con una etiqueta.</p>                        
+                    <p>Las etiquetas &lt;option&gt; dentro del elemento &lt;select&gt; definen las opciones disponibles en la lista desplegable.</p>
+                        
+                    <p>Consejo: Añade siempre la etiqueta &lt;label&gt; para conocer las mejores prácticas de accesibilidad.</p>
+                    <div class="ejemplo select">
+                        <p>Ejemplo:</p>
+                        <form action="/action_page.php">
+                            <label for="cars">Choose a car:</label>
+                            <select name="cars" id="cars">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                          </form>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="small">
+                <hgroup>
+                    <h2>&lt;small&gt;</h2>
+                    <p>La etiqueta &lt;small&gt; define texto más pequeño (como copyright y otros comentarios secundarios).</p>
+
+                    <p>Consejo: Esta etiqueta no está obsoleta, pero es posible lograr un efecto más rico (o igual) con CSS.</p>
+                    <span class="ejemplo small">
+                        <p>Ejemplo:</p>
+                        <p><p>This is some normal text.</p>
+                        <p><small>This is some smaller text.</small></p></p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="source">
+                <hgroup>
+                    <h2>&lt;source&gt;</h2>
+                    <p>La etiqueta &lt;source&gt; se utiliza para especificar varios recursos multimedia para elementos multimedia, como &lt;video&gt;, &lt;audio&gt; y &lt;picture&gt;.</p>
+                    <p>La etiqueta &lt;source&gt; le permite especificar archivos de vídeo/audio/imagen alternativos entre los que el navegador puede elegir, en función de la compatibilidad del navegador o del ancho de la ventana gráfica. El navegador elegirá la primera &lt;fuente&gt; que admite.</p>
+                    <div class="ejemplo source">
+                        <p>Ejemplo:</p>
+                        <audio controls>
+                            <source src="assets/Audio/ha-ha-ha-ha-ha-ha-ha-ha-3.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                          </audio>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="span">
+                <hgroup>
+                    <h2>&lt;span&gt;</h2>
+                    <p>La etiqueta &lt;span&gt; es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.</p>
+
+                    <p>La etiqueta &lt;span&gt; se puede diseñar fácilmente mediante CSS o manipular con JavaScript utilizando el atributo class o id.</p>
+                        
+                    <p>La etiqueta &lt;span&gt; es muy parecida al elemento &lt;div&gt;, pero &lt;div&gt; es un elemento de nivel de bloque y &lt;span&gt; es un elemento en línea.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="strike">
+                <hgroup>
+                    <h2>&lt;strike&gt;</h2>
+                    <p class="nosoporte">No es compatible con HTML5.</p>
+                        <p>La etiqueta &lt;strike&gt; se utilizó en HTML 4 para definir el texto tachado.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="strong">
+                <hgroup>
+                    <h2>&lt;strong&gt;</h2>
+                    <p>La etiqueta &lt;strong&gt; se utiliza para definir texto con gran importancia. Por lo general, el contenido del interior se muestra en negrita.</p>
+
+                    <p>Consejo: Utilice la etiqueta &lt;b&gt; para especificar texto en negrita sin ninguna importancia adicional.</p>
+                        <span class="ejemplo strong">
+                            <p>Ejemplo:</p>
+                            <strong>¡Terminar es importante!</strong>
+                        </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="style">
+                <hgroup>
+                    <h2>&lt;style&gt;</h2>
+                    <p>La etiqueta &lt;style&gt; se utiliza para definir la información de estilo (CSS) de un documento.</p>
+                    <p>Dentro del elemento &LT;style&gt; se especifica cómo se deben representar los elementos HTML en un navegador.</p>
+                    <div class="ejemplo style">
+                        <p>Ejemplo:</p>
+                        <img src="assets/Images/styles.jpg" alt="style" width="20%">
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="sub">
+                <hgroup>
+                    <h2>&lt;sub&gt;</h2>
+                    <p>La etiqueta &lt;sub&gt; define el texto del subíndice. El texto de subíndice aparece medio carácter por debajo de la línea normal y, a veces, se representa en una fuente más pequeña.</p> 
+                    <p>El texto de subíndice se puede usar para fórmulas químicas, como H<sub>2</sub>O.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="sup">
+                <hgroup>
+                    <h2>&lt;sup&gt;</h2>
+                    <p>La etiqueta &lt;sup&gt; define el texto en superíndice. El texto en superíndice aparece medio carácter por encima de la línea normal y, a veces, se representa en una fuente más pequeña.</p> 
+                    <p>El texto en superíndice se puede utilizar para notas a pie de página, como WWW <sup>1</sup>.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="svg">
+                <hgroup>
+                    <h2>&lt;svg&gt;</h2>
+                    <p>La etiqueta &lt;svg&gt; define un contenedor para gráficos SVG.</p>
+
+                    <p>SVG tiene varios métodos para dibujar trazados, cuadros, círculos, texto e imágenes gráficas.</p>
+                    <div class="ejemplo svg">
+                        <p>Ejemplo:</p>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                          </svg>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="table">
+                <hgroup>
+                    <h2>&lt;table&gt;</h2>
+                    <p>La etiqueta &lt;table&gt; define una tabla HTML.</p>
+                    <p>Una tabla HTML consta de un elemento &lt;table&gt; y uno o varios elementos &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;.
+                    <p>El elemento &lt;tr&gt; define una fila de tabla, el elemento &lt;th&gt; define un encabezado de tabla y el elemento &lt;td&gt; define una celda de tabla.</p>
+                    <p>Una tabla HTML también puede incluir elementos &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt; y &lt;tbody&gt;.</p>
+                    <span class="ejemplo table">
+                        <p>Ejemplo:</p>
+                        <table>
+                            <tr>
+                              <th>Month</th>
+                              <th>Savings</th>
+                            </tr>
+                            <tr>
+                              <td>January</td>
+                              <td>$100</td>
+                            </tr>
+                          </table>                          
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="tbody">
+                <hgroup>
+                    <h2>&lt;tbody&gt;</h2>
+                    <p>La etiqueta &lt;tbody&gt; se utiliza para agrupar el contenido del cuerpo en una tabla HTML.</p>
+                    <p>El elemento &lt;tbody&gt; se utiliza junto con los elementos &lt;thead&gt; y &lt;tfoot&gt; para especificar cada parte de una tabla (cuerpo, encabezado, pie de página).</p>                   
+                    <p>Los navegadores pueden usar estos elementos para habilitar el desplazamiento del cuerpo de la tabla independientemente del encabezado y el pie de página. Además, al imprimir una tabla grande que abarca varias páginas, estos elementos pueden permitir que el encabezado y el pie de página de la tabla se impriman en la parte superior e inferior de cada página.</p>
+                    <p>Nota: El elemento &lt;tbody&gt; debe tener una o más etiquetas &lt;tr&gt; en su interior.</p>                        
+                    <p>La etiqueta &lt;tbody&gt; se debe utilizar en el siguiente contexto: como elemento secundario de un elemento &lt;table&gt;, después de cualquier elemento &lt;caption&gt;, &lt;colgroup&gt; y &lt;thead&gt;.</p>
+                    <p>Sugerencia: Los elementos &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; no afectarán al diseño de la tabla de forma predeterminada. Sin embargo, puedes usar CSS para dar estilo a estos elementos.</p>
+                    <span class="ejemplo tbody">
+                        <p>Ejemplo:</p>
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                              </tr>
+                              <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                              </tr>
+                            </tfoot>
+                          </table>                          
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="td">
+                <hgroup>
+                    <h2>&lt;td&gt;</h2>
+                    <p>La etiqueta &lt;td&gt; define una celda de datos estándar en una tabla HTML.</p>
+                    <p>Una tabla HTML tiene dos tipos de celdas:</p>
+                        
+                    <p>Celdas de encabezado: contiene información de encabezado (creada con el elemento &lt;th&gt;)</p>
+                    <p>Celdas de datos: contiene datos (creados con el elemento &lt;td&gt;)</p>
+                    <p>El texto de los elementos &lt;td&gt; es normal y está alineado a la izquierda de forma predeterminada.</p>                     
+                    <p>El texto de los elementos &lt;th&gt; está en negrita y centrado de forma predeterminada.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="template">
+                <hgroup>
+                    <h2>&lt;template&gt;</h2>
+                    <p>La etiqueta &lt;template&gt; se utiliza como contenedor para contener parte del contenido HTML oculto al usuario cuando se carga la página.</p>
+                    <p>El contenido dentro de &lt;template&gt; se puede representar más tarde con un JavaScript.</p>
+                    <p>Puedes usar la etiqueta &lt;template&gt; si tienes algún código HTML que quieras usar una y otra vez, pero no hasta que lo solicites. Para hacer esto sin la etiqueta &lt;template&gt;, debe crear el código HTML con JavaScript para evitar que el navegador procese el código.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="textarea">
+                <hgroup>
+                    <h2>&lt;textarea&gt;</h2>
+                    <p>La etiqueta &lt;textarea&gt; define un control de entrada de texto de varias líneas.</p>
+                    <p>El elemento &lt;textarea&gt; se usa a menudo en un formulario para recopilar entradas de usuarios como comentarios o reseñas.</p>
+                    <p>Un área de texto puede contener un número ilimitado de caracteres y el texto se representa en una fuente de ancho fijo (normalmente Courier).</p>
+                    <p>El tamaño de un área de texto se especifica mediante los atributos cols y rows (o con CSS).</p>
+                    <p>El atributo name es necesario para hacer referencia a los datos del formulario después de enviarlo (si omite el atributo name, no se enviarán datos del área de texto).</p>
+                    <p>El atributo id es necesario para asociar el área de texto con una etiqueta.</p>
+                    <div class="ejemplo textarea">
+                        <p>Ejemplo:</p>
+                        <form action="/action_page.php">
+                            <p><label for="kodemiareview">Reseña Maquetado:</label></p>
+                            <textarea id="kodemiareview" name="kodemiareview" rows="4" cols="50">Aprende programación web en kodemia.</textarea>
+                            <br>
+                            <input type="submit" value="Submit">
+                          </form>
+                          
+                          <p>Click the "Submit" button and the form-data will be sent to a page on the 
+                          server called "action_page.php".</p>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="tfoot">
+                <hgroup>
+                    <h2>&lt;tfoot&gt;</h2>
+                    <p>La etiqueta &lt;tfoot&gt; se utiliza para agrupar el contenido del pie de página en una tabla HTML.</p>
+                    <p>El elemento &lt;tfoot&gt; se utiliza junto con los elementos &lt;thead&gt; y &lt;tbody&gt; para especificar cada parte de una tabla (pie de página, encabezado, cuerpo).</p>
+                    <p>Los navegadores pueden usar estos elementos para habilitar el desplazamiento del cuerpo de la tabla independientemente del encabezado y el pie de página. Además, al imprimir una tabla grande que abarca varias páginas, estos elementos pueden permitir que el encabezado y el pie de página de la tabla se impriman en la parte superior e inferior de cada página.</p>
+                    <p>Nota: El elemento &lt;tfoot&gt; debe tener una o más etiquetas &lt;tr&gt; en su interior.</p>
+                    <p>La etiqueta &lt;tfoot&gt; debe utilizarse en el siguiente contexto: como elemento secundario de un elemento &lt;table&gt;, después de cualquier elemento &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt; y &lt;tbody&gt;.</p>
+                    <p>Sugerencia: Los elementos &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; no afectarán al diseño de la tabla de forma predeterminada. Sin embargo, puedes usar CSS para dar estilo a estos elementos.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="th">
+                <hgroup>
+                    <h2>&lt;th&gt;</h2>
+                    <p>La etiqueta &lt;th&gt; define una celda de encabezado en una tabla HTML.</p>
+                    <p>Una tabla HTML tiene dos tipos de celdas:</p>
+                    <p>Celdas de encabezado: contiene información de encabezado (creada con el elemento &lt;th&gt;)</p>
+                    <p>Celdas de datos: contiene datos (creados con el elemento &lt;td&gt;)</p>
+                    <p>El texto de los elementos &lt;th&gt; está en negrita y centrado de forma predeterminada.</p>
+                    <p>El texto de los elementos &lt;td&gt; es normal y está alineado a la izquierda de forma predeterminada.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="thead">
+                <hgroup>
+                    <h2>&lt;thead&gt;</h2>
+                    <p>La etiqueta &lt;thead&gt; se utiliza para agrupar el contenido del encabezado en una tabla HTML.</p>
+
+                    <p>El elemento &lt;thead&gt; se utiliza junto con los elementos &lt;lt&gt; tbody&gt; y &lt;tfoot&gt; para especificar cada parte de una tabla (encabezado, cuerpo, pie de página).</p> 
+                        
+                    <p>Los navegadores pueden usar estos elementos para habilitar el desplazamiento del cuerpo de la tabla independientemente del encabezado y el pie de página. Además, al imprimir una tabla grande que abarca varias páginas, estos elementos pueden permitir que el encabezado y el pie de página de la tabla se impriman en la parte superior e inferior de cada página.</p>
+                        
+                    <p>Nota: El elemento &lt;thead&gt; debe tener una o más etiquetas &lt;tr&gt; en su interior.</p>
+                        
+                    <p>La etiqueta &lt;thead&gt; se debe utilizar en el siguiente contexto: como elemento secundario de un elemento &lt;table&gt;, después de cualquier elemento &lt;caption&gt; y &lt;colgroup&gt; y antes de cualquier elemento &lt;tbody&gt;, &lt;tfoot&gt; y &lt;tr&gt;.</p>
+                        
+                    <p>Sugerencia: Los elementos &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; no afectarán al diseño de la tabla de forma predeterminada. Sin embargo, puedes usar CSS para dar estilo a estos elementos.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="time">
+                <hgroup>
+                    <h2>&lt;time&gt;</h2>
+                    <p>La etiqueta &lt;time&gt; define una hora específica.</p>
+
+                    <p>El atributo datetime de este elemento se utiliza para traducir la hora a un formato legible por máquina para que los navegadores puedan ofrecer recordatorios de fecha a través del calendario del usuario, y los motores de búsqueda puedan producir resultados de búsqueda más inteligentes.</p>
+                    <span class="ejemplo time">
+                        <p>Ejemplo:</p>
+                        <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+                        <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+                        <p><b>Note:</b> The time element does not render as anything special in any of the major browsers.</p>
+                    </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="title">
+                <hgroup>
+                    <h2>&lt;title&gt;</h2>
+                    <p>La etiqueta &lt;title&gt; define el título del documento. El título debe ser solo texto y se muestra en la barra de título del navegador o en la pestaña de la página.</p>
+
+                    <p>La etiqueta &lt;title&gt; es obligatoria en los documentos HTML.</p>
+                        
+                    <p>¡El contenido del título de una página es muy importante para la optimización de motores de búsqueda (SEO)! El título de la página es utilizado por los algoritmos de los motores de búsqueda para decidir el orden al enumerar las páginas en los resultados de búsqueda.</p>
+                       <span class="ejemplo title"> 
+                    <p>El elemento &lt;title&gt;:</p>
+                        <ul>
+                            <li>Define un título en la barra de herramientas del navegador</li>
+                            <li>Proporciona un título para la página cuando se agrega a Favoritos</li>
+                            <li> Muestra un título para la página en los resultados del motor de búsqueda</li>
+                        </ul>
+                        <p>Aquí hay algunos consejos para crear buenos títulos:</p>
+                        <ul>
+                            <li>Opta por un título más largo y descriptivo (evita los títulos de una o dos palabras)</li>
+                            <li>Los motores de búsqueda mostrarán entre 50 y 60 caracteres del título, así que trata de no tener títulos más largos que eso</li>
+                            <li> No utilices solo una lista de palabras como título (esto puede reducir la posición de la página en los resultados de búsqueda)</li>
+                            <li>Por lo tanto, ¡intenta que el título sea lo más preciso y significativo posible!</li>
+                        </ul>
+                        
+                        <p>Nota: NO puede tener más de un elemento &lt;title&gt; en un documento HTML.</p>
+                       </span>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="tr">
+                <hgroup>
+                    <h2>&lt;tr&gt;</h2>
+                    <p>La etiqueta &lt;tr&gt; define una fila en una tabla HTML.</p>
+
+                    <p>Un elemento &lt;tr&gt; contiene uno o varios elementos &lt;th&gt; o &lt;td&gt;.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="track">
+                <hgroup>
+                    <h2>&lt;track&gt;</h2>
+                    <p>La etiqueta &lt;track&gt; especifica las pistas de texto para los elementos &lt;audio&gt; o &lt;vídeo&gt;.</p>
+                    <p>Este elemento se utiliza para especificar subtítulos, archivos de subtítulos u otros archivos que contengan texto, que deben ser visibles cuando se reproduce el contenido multimedia.</p>
+                    <p>Las pistas están formateadas en formato WebVTT (archivos .vtt).</p>
+                    <div class="ejemplo track">
+                        <p>Ejemplo:</p>
+                        <img src="assets/Images/track.jpg" alt="track" style="width: 30%";>
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="tt">
+                <hgroup>
+                    <h2>&lt;tt&gt;</h2>
+                    <p class="nosoporte">No es compatible con HTML5.</p>
+                    <p>La etiqueta &lt;tt&gt; se utilizó en HTML 4 para definir el texto del teletipo.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="u">
+                <hgroup>
+                    <h2>&lt;u&gt;</h2>
+                    <p>La etiqueta &lt;u&gt; representa un texto que no está articulado y tiene un estilo diferente al texto normal, como palabras mal escritas o nombres propios en el texto chino. Por lo general, el contenido del interior se muestra con un subrayado. (Puedes cambiar esto con CSS).</p> 
+
+                    <p>Consejo: Evite utilizar el elemento &lt;u&gt; ya que podría confundirse con un hipervínculo</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="ul">
+                <hgroup>
+                    <h2>&lt;ul&gt;</h2>
+                    <p>La etiqueta &lt;ul&gt; define una lista desordenada (con viñetas).</p>
+
+                    <p>Utilice la etiqueta &lt;ul&gt; junto con la etiqueta &lt;li&gt; para crear listas desordenadas.</p>
+                        
+                    <p>Consejo: Utiliza CSS para aplicar estilo a las listas.</p>
+                        
+                    <p>Consejo: Para listas ordenadas, utilice la etiqueta &lt;ol&gt;.</p>
+                    <div class="ejemplo ul">
+                        <p>Ejemplo:</p>
+                        <ul>
+                            <li><data value="21053">Cherry Tomato</data></li>
+                            <li><data value="21054">Beef Tomato</data></li>
+                            <li><data value="21055">Snack Tomato</data></li>
+                          </ul> 
+                        </div>   
+                </hgroup>
+                <hr>
+            </article>
+            <article id="var">
+                <hgroup>
+                    <h2>&lt;var&gt;</h2>
+                    <p>La etiqueta &lt;var&gt; se utiliza para definir una variable en programación o en una expresión matemática. El contenido del interior suele mostrarse en cursiva.</p>
+
+                    <p>Consejo: Esta etiqueta no está obsoleta. Sin embargo, es posible lograr un efecto más rico mediante el uso de CSS.</p>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="video">
+                <hgroup>
+                    <h2>&lt;video&gt;</h2>
+                    <p>La etiqueta &lt;video&gt; se utiliza para incrustar contenido de vídeo en un documento, como un clip de película u otras secuencias de vídeo.</p>
+
+                    <p>La etiqueta &lt;video&gt; contiene una o más etiquetas &lt;source&gt; con diferentes fuentes de vídeo. El navegador elegirá la primera fuente que admita.</p>
+                        
+                    <p>El texto entre las etiquetas &lt;video&gt; y &lt;video&gt; solo se mostrará en los navegadores que no admitan el elemento &lt;video&gt;.</p>
+                        
+                    <p>Hay tres formatos de video compatibles en HTML: MP4, WebM y OGG.</p>
+                    <div class="ejemplo video">
+                        <p>Ejemplo:</p>
+                        <video width="320" height="240" controls>
+                            <source src="assets/Video/A005_C049_09253L_001.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>                          
+                    </div>
+                </hgroup>
+                <hr>
+            </article>
+            <article id="wbr">
+                <hgroup>
+                    <h2>&lt;wbr</h2>
+                    <p>La etiqueta &lt;wbr&gt; (Word Break Opportunity) especifica en qué parte de un texto estaría bien agregar un salto de línea.</p>
+
+                    <p>Consejo: Cuando una palabra es demasiado larga, es posible que el navegador la rompa en el lugar equivocado. Puede usar el elemento &lt;wbr&gt; para agregar oportunidades de salto de palabra.</p>
+                    <span class="ejemplo wbr">
+                        <p>Ejemplo:</p>
+                        <p><p>Try to shrink the browser window, to view how the very long word in 
+                            the paragraph below will break:</p>
+                            
+                            <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p></p>
+                    </span>
+                </hgroup>
             </article>
         </section>
     </body>
