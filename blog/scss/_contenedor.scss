@@ -1,0 +1,36 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px;
+    h2 {
+        margin-top: 45px;
+        padding: 10px;
+        height: 89vh;
+    }
+    main {
+    article {
+        background-color: $colorContenedor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        margin: 20px 0;
+      
+        .contenedorImagen {
+            width: 90%;
+            padding: 10px;
+            .imagenArticle {
+                width: 100%;
+              }  
+        }
+        .contenedorFechas span {
+            color:$colorArticulo;
+          }
+          .contenedorTitulo {
+            padding: 8px;
+          }
+        }
+    
+    }
+}

@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $colorContenedor;
+  
+    color: $colorNavbar;
+    text-decoration: overline;
+    padding: 30px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+
+  }

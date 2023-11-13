@@ -1,0 +1,51 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px;
+}
+
+.mainContainer {
+    margin-top: 45px;
+    padding: 10px;
+    height: 89vh;
+  }
+  .articulo {
+    background-color: $colorContenedor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 20px 0;
+  }
+
+  .mainContainer {
+  margin-top: 45px;
+  padding: 10px;
+  height: 89vh;
+}
+
+.textoCentrado {
+  text-align: center;
+  color: $colorArticulo;
+  text-decoration:double;
+
+}
+
+.contenedorImagen {
+  width: 90%;
+  padding: 10px;
+}
+
+.imagenArticle {
+  width: 100%;
+}
+
+.contenedorFechas span {
+  color: $colorFechas;
+}
+
+.contenedorTitulo {
+  padding: 8px;
+color: $colorArticulo;
+}

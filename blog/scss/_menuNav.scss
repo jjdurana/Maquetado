@@ -1,0 +1,12 @@
+.menuNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+        li {
+    list-style: none;
+     a {
+    color: $colorNavbar;
+    text-decoration: none;
+  }
+}
+}
